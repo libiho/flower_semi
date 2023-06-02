@@ -1,0 +1,127 @@
+.cart-wrap {
+    width: 1050px;
+    margin: 0px auto;
+    padding-bottom: 80px;
+}
+
+.order-header-panel {
+    position: relative;
+    height: 88px;
+
+}
+
+.order-header {
+    height: 44px;
+    margin: 0 auto;
+}
+
+.order-header>div {
+    text-align: left;
+    padding: 50px 0px 50px;
+    line-height: 50px;
+}
+
+.order-header span {
+    font-weight: bold;
+    padding-left: 23px;
+    font-size: 15px;
+}
+
+.cart-content {
+    margin-top: 100px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    letter-spacing: -0.5px;
+}
+
+.cart-content-panel {
+    margin: auto;
+    width: 900px;
+}
+
+.cart-content-header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 110px 10px 10px 2px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 0px 0px;
+}
+
+.non-header{
+    background-color: rgb(247, 248, 250);
+    padding: 100px 0px;
+    margin-top: 40px;
+}
+
+.non-header>div{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px auto 12px;
+}
+
+.non-header a{
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(248, 178, 188);
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px auto;
+    font-weight: bolder;
+}
+
+.atag{
+    display: flex;
+    margin-right: 200px;
+}
+
+.atag>a{
+    display: flex;
+}
+
+table{
+    margin-left: 70px;
+    padding: 0;
+}
+
+.span1{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.span2{
+    display: block;
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.span3{
+    font-size: 15px;
+}
+
+.non-header img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.a1, .a2{
+    display: block;
+    padding-top: 50px;
+}
+

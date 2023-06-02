@@ -1,0 +1,794 @@
+
+@charset "UTF-8";
+
+.header-top-bottom-left a {
+    display: block;
+}
+
+/* 업버튼 css */
+
+
+.up-btn {
+    position: fixed;
+    /* 바닥에서의 위아래양옆을 위치로 고정한것 */
+    bottom: 50px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bi-arrow-up-circle:hover {
+    color: #ffbecf;
+}
+
+.up-btn.show {
+    opacity: 1;
+}
+
+.bi-arrow-up-circle {
+    align-self: center;
+        justify-self: center;
+    font-size: 3rem !important;
+    color: rgb(252, 225, 229);
+}
+
+
+
+
+
+
+
+
+
+/*종류별 페이지의 버튼 중앙 속성*/
+.side.minibtn {
+  position: absolute;
+  /* left: 50%; */
+  /* transform: translateX(-30%); */
+  margin-left: 46%;
+  padding: 20px 40px;
+}
+
+
+
+.side.delivery {
+
+  padding: 16px 30px;
+}
+
+
+.side.gift {
+
+  padding: 16px 30px;
+}
+
+
+/* 종류별 호버시 이미지 CSS */
+
+.type-link {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.type-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.type-link span {
+    display: block;
+    text-align: center;
+}
+
+
+
+/* 여기~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+/* 메인 회원가입 사이즈 */
+
+.header-top-top{
+    width: 200px;
+}
+
+
+.card-img-top {
+    width: 100% !important;
+    height: 300px !important;
+
+    object-fit: cover;
+}
+
+
+
+.card-body .p-4{
+    padding: 12px !important;
+}
+
+
+
+/* gpt 체크박스 시작 */
+
+
+
+
+
+
+.container_check {
+    background-color: #fff7f7;
+    /* background-color: #fef4f4; */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    /* 수평 및 수직 중앙 정렬을 위해 flexbox 사용 */
+    align-items: center;
+    justify-content: center;
+    /* max-width: 600px; */
+    /* 원하는 최대 너비로 조절 */
+    margin: 0 auto;
+    /* 수평 중앙 정렬 */
+}
+
+
+
+
+
+.bestReviewBtn {
+  border-radius: 8px;
+  /* padding: 20px; */
+  max-width: 1200px;
+  display: flex;
+  /* 수평 및 수직 중앙 정렬을 위해 flexbox 사용 */
+  align-items: center;
+  justify-content: center;
+  /* max-width: 600px; */
+  /* 원하는 최대 너비로 조절 */
+  margin: 0 auto;
+  margin-top: 30px;
+  /* 수평 중앙 정렬 */
+}
+
+
+.ck_table_op {
+    /* 테이블 */
+    border-collapse: collapse;
+    border: 1px solid #fce8e8;
+    width: 100%;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
+
+
+/* 라벨에 호버 시, 배경색을 연하게 변경 */
+label:hover {
+    background-color: rgb(248, 178, 188);
+
+}
+
+.ck_table_op th {
+    padding: 10px;
+    /* 테이블 테두리 색상 */
+    border: 1px solid #fce8e8;
+    text-align: center;
+}
+
+
+.ck_table_op td {
+    padding: 10px;
+    /* 테이블 테두리 색상 */
+    border: 1px solid #fce8e8;
+    text-align: center;
+}
+
+.ck_table_op input[type=checkbox] {
+    display: none;
+}
+
+.ck_table_op label {
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ck_table_op input[type=checkbox]:checked+label {
+    background-color: rgb(248, 178, 188);
+    color: #fff;
+}
+
+.ck_table_op tr td:nth-child(n+2) {
+    width: 16%;
+    max-width: 70px;
+    /* 최대 너비 */
+    white-space: nowrap;
+    /* 텍스트 줄바꿈 방지 */
+    overflow: hidden;
+    /* 넘치는 부분 숨김 */
+    text-overflow: ellipsis;
+    /* 넘칠 경우 "..."로 표시 */
+}
+
+/* gpt 체크박스 끝 */
+
+
+
+/* a 태그 밑줄 없애고 검은색 먼저 적용 */
+
+a {
+    text-decoration: none !important;
+    color: rgb(68, 59, 59) !important;
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+}
+
+
+
+/* 찜하기 버튼 */
+
+.col .mini_like {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.mi_like {
+    width: 30px;
+    height: 30px;
+}
+
+.col .mini_shopping {
+    width: 30px;
+    height: 30px;
+
+}
+
+ .mini_like {
+     cursor: pointer;
+ }
+
+
+ .bestbtn {
+     margin-top: 50px;
+ }
+
+
+ svg {
+     width: 100px;
+     height: 100px;
+     color: limegreen;
+ }
+
+/* 베스트 버튼 */
+
+.ministyle {
+
+    padding-top: 6%;
+    text-align: center;
+    /* display: block; */
+    /* background-color: #000; */
+}
+
+
+/* gpt 사이드바 시작 */
+
+.clickmenu .hide {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.clickmenu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.clickmenu>a:hover+.icon,
+.clickmenu>a:focus+.icon,
+.clickmenu>a:active+.icon {
+    background-color: #ccc;
+}
+
+.clickmenu>a:hover+.icon+.sub-menu,
+.clickmenu>a:focus+.icon+.sub-menu,
+.clickmenu>a:active+.icon+.sub-menu {
+    display: block;
+}
+
+
+/* gpt 사이드바 끝 */
+
+
+/* 임준석 사이드바 */
+
+
+/* 필수!!! 밑으로 li가 안되고 옆으로 붙음 */
+.hero__categories ul li {
+    display: block;
+}
+
+
+/* 하위 li의 사이즈 조절 */
+.hero__categories ul li a {
+    font-size: 16px;
+    /* line-height: 39px; */
+    display: block;
+}
+
+/* 임준석 사이드바 끝 */
+
+
+
+/* 사이드바 시작 */
+
+
+
+
+
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* ===== Colors ===== */
+    /* --body-color: #fafcff; */
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+    position: fixed;
+    /* fixed로 해야 사이드바가 스크롤을 따라다님.. */
+    /* position: absolute; */
+
+    top: 0;
+    /* top: 50px; */
+    left: 0;
+    height: 100%;
+    width: 200px;
+    /* background: var(--sidebar-color); */
+    background: #fdf8ff;
+    transition: var(--tran-05);
+    /* z-index: 100; */
+    z-index: 100;
+
+}
+
+.sidebar.close {
+    width: 85px;
+    /* 88 */
+}
+
+/* ===== Reusable code - Here ===== */
+
+
+.sidebar header .image,
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+
+}
+
+
+.sidebar li {
+
+    /* 사이즈가 문제였다!!!!!!!!!!!! */
+    /* height: 47px; */
+    list-style: none;
+    display: block;
+    /* display: flex; */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon {
+    /* color: var(--text-color); */
+    color: #000;
+    transition: var(--tran-03);
+}
+
+.sidebar .text {
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+    line-height: 40px;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+}
+
+/* =========================== */
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession {
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+/* .sidebar header .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .sidebar header .image img {
+  width: 40px;
+  border-radius: 6px;
+} */
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+/* .sidebar.close .toggle {
+  transform: translateY(-50%) rotate(0deg);
+} */
+
+.sidebar .menu {
+    margin-top: 5px;
+}
+
+.sidebar li.search-box {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+
+
+.sidebar li a {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    /* display: flex; */
+    display: block;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+    text-align: center;
+}
+
+/* 큰 카테고리 호버시 색 변함 */
+.sidebar li a:hover {
+    background-color: rgb(255, 218, 224);
+    /* var(--primary-color) */
+}
+
+/* 작은 카테고리 호버시 색 변함 */
+.sub-menu li a:hover {
+background-color: rgb(248, 178, 188);
+    /* var(--primary-color) */
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+/* 사이드바에 스크롤바가 보임 */
+.menu-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .menu-bar .mode {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.menu-bar .mode .sun-moon {
+    height: 50px;
+    width: 60px;
+}
+
+.mode .sun-moon i {
+    position: absolute;
+}
+
+.mode .sun-moon i.sun {
+    opacity: 0;
+}
+
+body.dark .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .mode .sun-moon i.moon {
+    opacity: 0;
+}
+
+.menu-bar .bottom-content .toggle-switch {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+    transition: var(--tran-05);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+body.dark .switch::before {
+    left: 20px;
+}
+
+.home {
+    top: 0;
+    top: 0;
+    /* left: 250px; */
+    left: 250px;
+    /* height: 100vh; */
+    height: 100%;
+    width: 100%;
+    /* width: calc(100% - 250px); */
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    /* padding: 12px 60px; */
+}
+
+.sidebar.close~.home {
+    left: 78px;
+    /* height: 100vh;  
+      이걸 지우니깐 파란색이 다 적용됨  
+    */
+    width: calc(100% - 78px);
+}
+
+body.dark .home .text {
+    color: var(--text-color);
+}
+
+/* 토글 아이콘 */
+.bi-toggle-on {
+    font-size: 43px;
+    color: pink;
+}
+
+.bi-toggle-off {
+    font-size: 40px;
+    color: pink;
+}
+
+.togright {
+    margin-top: 60px;
+    display: flex;
+        justify-content: center;
+}
+
+/* 사이드바 끝 */
+
+
+
+
+
+
+
+/*  드롭박스 시작 */
+
+
+.dropdown_1 {
+    float: right;
+    margin: 15px;
+    margin-right: 10px;
+    width: 250px;
+
+}
+
+/*  드롭박스 끝 */
+
+
+
+
+/*  업버튼 */
+
+#wrap {
+    margin: 0 auto;
+    width: 300px;
+}
+
+#back-to-top {
+    display: inline-block;
+    background-color: rgb(248, 178, 188);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#back-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#back-to-top:active {
+    background-color: #555;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 업버튼 끝 */

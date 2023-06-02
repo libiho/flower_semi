@@ -1,0 +1,137 @@
+.hero.hero-normal .hero__categories {
+	position: relative;
+ }
+ 
+ .hero.hero-normal .hero__categories ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 46px;
+	width: 100%;
+	z-index: 9;
+	background: #ffffff;
+ }
+ 
+ .hero.hero-normal .hero__search {
+	margin-bottom: 0;
+ }
+ 
+ .hero__categories__all {
+	background: rgb(248, 178, 188);
+	position: relative;
+	padding: 10px 25px 10px 40px;
+	cursor: pointer;
+	width: 200px;
+	
+ }
+ 
+ .hero__categories__all i {
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 10px;
+ }
+ 
+ .hero__categories__all span {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+ }
+ 
+ .hero__categories__all:after {
+	position: absolute;
+	right: 18px;
+	top: 9px;
+	
+	font-family: "ElegantIcons";
+	font-size: 18px;
+	color: #ffffff;
+ }
+ 
+ .hero__categories>ul {
+	border: 1px solid #ebebeb;
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	width: 200px;
+	height: 604px;
+	 
+ }
+ 
+ .hero__categories ul li {
+	list-style: none;
+	 text-decoration: none;
+	 display: block;
+ }
+ 
+ .hero__categories ul li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	line-height: 39px;
+	display: block;
+	 text-decoration: none;
+ }
+ 
+ .sidebar{
+	float: left;
+	/* margin-left: 400px; */
+	/* width: fit-content; */
+	/* border: 5px solid red; */
+ }
+ 
+ .content1{
+	float: left;
+	width: 850px;
+ }
+ 
+ .content2{
+	float: left;
+	width: 850px;
+ }
+ 
+ .userForm{
+	border: 1px solid #ebebeb;
+	float: left;
+	width: 600px;
+	height: 250px;
+	padding: 20px;
+	margin-bottom: 30px;
+	
+ }
+ 
+ #content-body{
+	width: 1050px;
+	margin: 0px auto;
+ }
+ 
+ #form{
+	width: fit-content;
+	margin: 0px auto;
+ }
+ 
+ .point>a{
+	/* border: 1px solid black; */
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+ }
+ 
+ .coupon>a{
+	/* border: 1px solid black; */
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+ }
+ 
+ .grade>a{
+	/* border: 1px solid black; */
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+ }
+ 
+ .userForm>ul>li{
+	border: 1px solid black;
+	float: left;
+	margin-left: 100px;
+ }
+ 

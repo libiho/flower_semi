@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="myPageReview">
+		SELECT P.P_NAME, O.ORD_ID, R.REVIEW_DETAIL, R.REVIEW_ID
+		FROM TB_PRODUCT P
+		RIGHT JOIN TB_REVIEW R ON (R.P_ID = P.P_ID)
+		LEFT JOIN TB_MEM_ORDER_DETAIL D ON (D.OD_ID = R.OD_ID)
+		LEFT JOIN TB_MEM_ORDER O ON (O.ORD_ID = D.ORD_ID)
+		LEFT JOIN TB_MEMBER M ON (M.MEM_ID = O.MEM_ID)
+		WHERE M.MEM_ID = ?
+	</entry>
+	
+	<entry key="updateMyPageReview">
+		UPDATE TB_REVIEW
+		SET REVIEW_DETAIL = ?
+		WHERE REVIEW_ID = ?
+	</entry>
+	
+</properties>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

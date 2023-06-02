@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	
+	<entry key="countCoupon">
+		SELECT COUNT(O.MEM_ID) AS "COUNT"
+		FROM TB_COUPON C
+		LEFT JOIN TB_OWNED_COUPON O ON (C.COU_ID = O.COU_ID)
+		LEFT JOIN TB_MEMBER M ON (M.MEM_ID = O.MEM_ID)
+		WHERE M.MEM_ID = ?
+	</entry>
+	
+</properties>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="loginMember">
+		SELECT
+		 	MEM_ID
+			,MEM_PW
+			,MEM_EMAIL
+			,MEM_NAME
+			,MEM_PHONE
+			,MEM_POSTAL
+			,MEM_STREET
+			,MEM_ADDRESS
+			,MEM_ENROLL_DATE
+			,MEM_MILEAGE
+			,MEM_IMG
+			,MEM_GET_PHONE
+			,MEM_BIRTHDATE
+			,MEM_GENDER
+			,MEM_STATUS
+		FROM TB_MEMBER
+		WHERE MEM_ID = ? AND MEM_PW = ?
+	</entry>
+	
+	<entry key="checkMember">
+		SELECT MEM_ID
+		FROM TB_MEMBER
+		WHERE MEM_ID = ?
+	</entry>
+	
+	<entry key="selectMemberOrderInfo">
+		SELECT MEM_ID, MEM_NAME, MEM_EMAIL, MEM_PHONE, MEM_POSTAL, MEM_STREET, MEM_ADDRESS, MEM_MILEAGE
+		FROM TB_MEMBER
+		WHERE MEM_ID = ?
+	</entry>
+	
+	<entry key="selectMemberCoupon">
+		SELECT COU_ID, COU_NAME, COU_DETAIL, COU_REGDATE, COU_EXPIRE, COU_DISCOUNT
+		FROM TB_OWNED_COUPON
+		JOIN TB_COUPON USING (COU_ID)
+		WHERE MEM_ID = ? AND COU_USED_YN = 'N'
+	</entry>
+	
+	<entry key="addOrder">
+		INSERT INTO TB_MEM_ORDER(ORD_ID,
+		                         MEM_ID,
+		                         ORD_DATE,
+		                         ORD_POSTAL,
+		                         ORD_STREET,
+		                         ORD_ADDRESS,
+		                         ORD_RECIEVER_NAME,
+		                         ORD_RECIEVER_PHONE,
+		                         ORD_REQUEST)
+		VALUES (
+		         SEQ_MEM_ORDER.NEXTVAL
+		       , ?
+		       , SYSDATE
+		       , ?
+		       , ?
+		       , ?
+		       , ?
+		       , ?
+		       , ? 
+		        ) 
+	</entry>
+	
+	<entry key="selectOdId">
+		SELECT ORD_ID
+		FROM 
+		(SELECT ORD_ID FROM TB_MEM_ORDER
+		 WHERE MEM_ID = ?
+		 ORDER BY ORD_ID DESC)
+		WHERE ROWNUM &lt;= 1
+	</entry>
+	
+	<entry key="addOrderDetail">
+		INSERT INTO TB_MEM_ORDER_DETAIL(OD_ID,
+		                                OD_COUNT,
+		                                OD_STATUS,
+		                                ORD_ID,
+		                                MEM_ID,
+		                                OPTION_1ND_NO,
+		                                OPTION_2ND_NO,
+		                                OD_PRICE,
+		                                OPTION_2ND_TITLE,
+		                                OPTION_PRICE,
+		                                P_ID,
+		                                OPTION_2ND_CONTENT)
+		VALUES (
+		          SEQ_MEM_ORDER_DETAIL.NEXTVAL
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        , ?
+		        )
+	</entry>
+	
+	<entry key="updateMileage">
+		UPDATE TB_MEMBER
+		SET MEM_MILEAGE = ?
+		WHERE MEM_ID = ?
+	</entry>
+	
+	<entry key="insertWishList">
+		INSERT INTO 
+		    TB_WISHLIST
+		            (
+		               MEM_ID
+		             , P_ID
+		             , WISHLIST_DATE
+		             )
+		             VALUES
+		                  (
+		                    ?
+		                  , ?
+		                  , SYSDATE
+		                  )
+	</entry>
+	
+	<entry key="deleteWishList">
+		DELETE 
+		FROM TB_WISHLIST
+		WHERE MEM_ID = ? AND P_ID = ?
+	</entry>
+	
+	<entry key="insertkeyword">
+		INSERT INTO
+		    TB_SEARCH
+			      (
+			       MEM_ID
+			     , SEARCH_KEYWORD
+			     , SEARCH_DATE
+			      )
+			      VALUES
+			      (
+			        ?
+			      , ?
+			      , SYSDATE
+			      )
+	</entry>
+	
+	<entry key="selectRealTimeSearch">
+		SELECT A.*
+  			FROM (SELECT SEARCH_KEYWORD, COUNT(SEARCH_KEYWORD) AS "COUNT"
+        		FROM TB_SEARCH
+        		WHERE REGEXP_LIKE(SEARCH_KEYWORD, '[가-힝]')
+        		GROUP BY SEARCH_KEYWORD
+        		ORDER BY COUNT DESC) A
+		WHERE ROWNUM &lt;= 10
+	</entry>
+	
+	
+	
+	
+	<!-- 마이페이지 관련 -->
+	<entry key="updateMember">
+		UPDATE TB_MEMBER
+	   	   SET MEM_EMAIL = ?
+	     	 , MEM_NAME = ?
+	         , MEM_PHONE = ?
+	         , MEM_STREET = ?
+	         , MEM_ADDRESS = ?
+		 WHERE MEM_ID = ?
+	</entry>
+	
+	<entry key="selectMember">
+    		SELECT 
+			  MEM_ID
+			, MEM_PW
+			, MEM_EMAIL
+			, MEM_NAME
+			, MEM_PHONE
+			, MEM_POSTAL
+			, MEM_STREET
+			, MEM_ADDRESS
+			, MEM_ENROLL_DATE
+			, MEM_MILEAGE
+			, MEM_IMG
+			, MEM_GET_PHONE
+			, MEM_BIRTHDATE
+			, MEM_GENDER
+			, MEM_STATUS
+		 FROM TB_MEMBER
+		WHERE MEM_ID = ?
+    </entry>
+	
+	<entry key="updatePwd">
+	    UPDATE TB_MEMBER
+	       SET MEM_PW = ?
+	     WHERE MEM_ID = ?
+	       AND MEM_PW = ?
+    </entry>
+	
+	<entry key="deleteMember">
+	    UPDATE TB_MEMBER
+	       SET MEM_STATUS = 'Y'
+	     WHERE MEM_ID = ?
+	       AND MEM_PW = ?
+    </entry>
+	
+	<entry key="selectLikeCount">
+		SELECT COUNT(P_ID) AS "COUNT"
+		FROM TB_WISHLIST
+		WHERE MEM_ID = ?
+	</entry>
+	
+	<entry key="selectLikeArr">
+		SELECT P_ID 
+		FROM TB_WISHLIST
+		WHERE MEM_ID = ?
+	</entry>
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<entry key="insertMember">
+	INSERT
+    INTO 
+    TB_MEMBER
+    (
+         MEM_ID
+        ,MEM_PW
+        ,MEM_EMAIL
+        ,MEM_NAME
+        ,MEM_PHONE
+        ,MEM_POSTAL
+        ,MEM_STREET
+        ,MEM_ADDRESS
+        ,MEM_ENROLL_DATE
+        ,MEM_GET_PHONE
+        ,MEM_BIRTHDATE
+        ,MEM_GENDER
+        ,MEM_STATUS
+        )
+    VALUES
+    (
+         ?
+        ,?
+        ,?
+        ,?
+        ,?
+        ,?
+        ,?
+        ,?
+        ,SYSDATE
+        ,'N'
+        ,TO_DATE(?)
+        ,?
+        ,'Y'
+        )
+	
+	</entry>
+	
+	<entry key="findId">
+	SELECT MEM_ID
+	FROM TB_MEMBER
+	WHERE MEM_NAME = ? AND MEM_EMAIL = ?
+	</entry>
+	
+	<entry key="findPw">
+	SELECT MEM_PW
+	FROM TB_MEMBER
+	WHERE MEM_ID = ? AND MEM_EMAIL = ?
+	</entry>
+	
+	<entry key="findOrderNo">
+	SELECT 
+		ORD_ID
+	FROM TB_NON_MEMBER_ORDER
+	WHERE ORD_RECEIVER_NAME = ?
+			 AND 
+			 ORD_RECEIVER_PHONE = ?
+	</entry>
+	
+	
+	
+	<!-- 아이디 중복확인 -->
+	<entry key="idCheck">
+	SELECT
+        COUNT (*) "COUNT"
+    FROM TB_MEMBER
+    WHERE MEM_ID = ?
+	
+	</entry>
+</properties>
+
+
+
+
+
+
+
+
+
+
+

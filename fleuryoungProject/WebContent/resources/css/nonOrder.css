@@ -1,0 +1,748 @@
+.cart-wrap {
+    width: 1050px;
+    margin: 0px auto;
+    padding-bottom: 80px;
+}
+
+.order-header-panel {
+    position: relative;
+    height: 88px;
+
+}
+
+.order-header {
+    height: 44px;
+    margin: 0 auto;
+}
+
+.order-header>div {
+    text-align: left;
+    padding: 50px 0px 50px;
+    line-height: 50px;
+}
+
+.order-header span {
+    font-weight: bold;
+    padding-left: 23px;
+    font-size: 15px;
+}
+
+.cart-content {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    letter-spacing: -0.5px;
+}
+
+.cart-content-panel {
+    width: 900px;
+    padding-left: 18px;
+}
+
+.cart-content-header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 110px 10px 10px 2px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 0px 0px;
+}
+
+.non-header{
+    background-color: rgb(247, 248, 250);
+    padding: 20px 0px;
+    margin-top: 40px;
+}
+
+.non-header>div{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px auto 12px;
+}
+
+.non-header>a{
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(248, 178, 188);
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px auto;
+    font-weight: bold;
+}
+
+
+.non-order-panel{
+    margin-top: 50px;
+}
+
+.non-order-panel>section{
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    min-height: 1px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid rgb(184, 184, 185);
+}
+
+.non-order-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.non-order-content-panel{
+    overflow: hidden;
+    margin: -3px;
+    padding: 23px 3px 3px;
+    box-sizing: border-box;
+}
+
+.non-order-content-panel>section{
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    min-height: 1px;
+}
+
+.non-name-label{
+    display: flex;
+    padding: 0px 0px 8px;
+}
+
+.non-name-div{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(117, 117, 117);
+    white-space: pre-line;
+    max-height: 40px;
+    transition: color 0.25s ease 0s;
+}
+
+.non-name-input-panel{
+    flex: 1 0 0px;
+    max-width: 270px;
+}
+
+.non-name-input{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.non-email-label{
+    display: flex;
+    padding: 8px 0px;
+}
+
+.non-email-div{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(117, 117, 117);
+    white-space: pre-line;
+    max-height: 40px;
+    transition: color 0.25s ease 0s;
+}
+
+.non-email-input-panel1{
+    flex: 1 0 0px;
+    max-width: 570px;
+}
+
+.non-email-input-panel2{
+    display: flex;
+}
+
+.non-email-input-panel3{
+    display: flex;
+    flex: 1 0 0px;
+    width: 100%;
+}
+
+.non-email-input-panel4{
+    position: relative;
+    flex: 1 0 0px;
+    width: 100%;
+    min-width: 270px;
+}
+
+.non-email-input{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.non-email-input-panel4+span{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+}
+
+.non-email-detail-panel1{
+    position: relative;
+    flex: 1 0 0px;
+}
+
+.non-email-detail-panel2{
+    width: 100%;
+}
+
+.non-email-detail-panel3{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.non-email-select{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.non-email-select+svg{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    pointer-events: none;
+    color: #bdbdbd;
+}
+
+.non-phone-label{
+    display: flex;
+    padding: 8px 0px;
+}
+
+.non-phone-div{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(117, 117, 117);
+    white-space: pre-line;
+    max-height: 40px;
+    transition: color 0.25s ease 0s;
+}
+
+.non-phone-input-panel1{
+    flex: 1 0 0px;
+    max-width: 270px;
+}
+
+.non-phone-input-panel2{
+    display: flex;
+}
+
+.non-phone-input-panel3{
+    position: relative;
+    width: 85px;
+    margin-right: 8px;
+}
+
+.non-phone-input-panel4{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.non-phone-select, .non-phone-input{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.non-phone-select+svg{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    pointer-events: none;
+    color: #bdbdbd;
+}
+
+.non-phone-input-panel5{
+    flex: 1 0 0px;
+}
+
+.non-phone-button-panel{
+    padding-top: 8px;
+}
+
+.non-phone-button{
+    width: 100%;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 10px;
+    min-height: 40px;
+    background-color: rgb(248, 178, 188);
+    border-color: rgb(248, 178, 188);
+    color: #fff;
+}
+
+
+/* 주소 시작 */
+.non-address-label{
+    display: flex;
+    padding: 8px 0px;
+}
+
+.non-address-title{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    white-space: pre-line;
+    max-height: 40px;
+    transition: color 0.25s ease 0s;
+    color: rgb(117, 117, 117);
+}
+
+.non-address-panel{
+    flex: 1 0 0px;
+    max-width: 570px;
+}
+
+.non-address-find-panel{
+    display: flex;
+    margin-bottom: 8px;
+    max-width: 270px;
+}
+
+.non-address-find-button{
+    width: 85px;
+    margin-right: 8px;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 10px;
+    min-height: 40px;
+    background-color: #fff;
+    border-color: rgb(248, 178, 188);
+    color: rgb(248, 178, 188);
+    border: 1px solid;
+    font-weight: bold;
+    padding: 0px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.non-address-input{
+    background-color: #f5f5f5;
+    border-color: #dbdbdb;
+    color: #bdbdbd;
+    flex: 1 0 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 4px;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+}
+
+.non-address-detail-panel{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.non-address-detail{
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 39.8182px;
+    background-color: #f5f5f5;
+    border-color: #dbdbdb;
+    color: #bdbdbd;
+
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+.non-address-detail-input{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Noto Sans CJK KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    resize: none;
+    appearance: none;
+    margin: 0px;
+    padding: 8px 15px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 219, 219);
+    border-image: initial;
+    border-radius: 4px;
+    transition: border-color 0.1s ease 0s, background-color 0.1s ease 0s;
+}
+
+/* 주문 상품 시작 */
+
+.non-product-panel{
+    margin-top: 50px;
+}
+
+.non-product-panel>section{
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    min-height: 1px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid rgb(184, 184, 185);
+}
+
+.non-product-header-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.non-product-content-panel{
+    overflow: hidden;
+    margin: -3px;
+    padding: 23px 3px 3px;
+    box-sizing: border-box;
+}
+
+.non-product-content-panel>section{
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    min-height: 1px;
+    padding-bottom: 24px;
+}
+
+.non-product-title-panel1{
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid rgb(234, 235, 239);
+}
+
+.non-product-title-panel2{
+    padding: 11px 16px 10px;
+    background-color: rgb(247, 248, 250);
+}
+
+.non-product-title-panel3{
+    display: flex;
+}
+
+.non-product-title{
+    flex: 1 0 0px;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+}
+
+.non-title-deli-panel{
+    flex: 1 0 0px;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgb(66, 66, 66);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.non-title-deli-panel>span{
+    color: rgb(130, 140, 148);
+    margin-right: 4px;
+}
+
+.non-product-detail-panel{
+    border-bottom: 0px;
+    display: flex;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.non-product-detail-panel>img{
+    border-radius: 4px;
+    width: 64px;
+    height: 64px;
+    margin-right: 12px;
+}
+
+.non-product-name{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(41, 41, 41);
+    margin-bottom: 8px;
+}
+
+.non-product-price-panel{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.non-product-price{
+    font-size: 16px;
+    line-height: 17px;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+    width: 120px;
+}
+
+.non-product-price+div{
+    margin: 0px 8px;
+    margin-left: -20px;
+    height: 12px;
+    border-right: 1px solid rgb(234, 235, 239);
+}
+
+.non-product-count{
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(117, 117, 117);
+    width: 50px;
+}
+
+
+.non-message-panel{
+    margin-bottom: 50px;
+}
+
+.cart-side-panel {
+    position: relative;
+    width: 350px;
+    min-height: 942px;
+    padding-left: 10px;
+}
+
+.cart-side-content{
+    position: absolute;
+    width: 300px;
+    border: 1px solid #f2f2f2;
+    margin-top: 40px;
+}
+
+.cart-title-panel{
+    padding: 23px 19px 20px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 0;
+}
+
+.cart-title{
+    padding-left: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.cart-contents{
+    padding: 0px 19px 20px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 0;
+}
+
+.price-field,
+.dprice-field,
+.discount-field,
+.discount-field2,
+.discount-field3{
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.ptitle{
+    width: 100px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.pprice{
+    font-size: 17px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.won{
+    padding-left: 2px;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+
+.result-field{
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 18px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.result-title{
+    width: 100px;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+.result-price{
+    width: 162px;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.result-price>strong{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.result-button-panel{
+    padding-top: 20px;
+}
+
+.cart-access-button{
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 56px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(248, 178, 188);
+    border: 0 none;
+    font-weight: 500;
+}
+
+.add-card{
+    font-weight: bolder;
+}
+
+.add-card:hover{
+    cursor: pointer;
+    color: rgb(248, 178, 188);
+}
+
